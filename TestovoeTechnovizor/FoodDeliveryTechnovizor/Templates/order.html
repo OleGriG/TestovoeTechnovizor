@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center">Отчет о заказе №{{ order.id }}</h1>
+                    </div>
+                    <div class="card-body">
+                        <p>Дата и время заказа: {{ order.delivery_datetime }}</p>
+                        <p>Список блюд:</p>
+                        <ul>
+                            {% for dish in dishes %}
+                            <li>{{ dish.name }} - {{ dish.price }} руб.</li>
+                            {% endfor %}
+                        </ul>
+                        <p>Итоговая сумма: {{ total_sum }} руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+
+{% block content %}
+    <h1 class="text-center">Отчет о заказах</h1>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Сотрудник</th>
+                    <th>Дата и время</th>
+                    <th>Отчет</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                <tr>
+                    <td>{{ order.employee }}</td>
+                    <td>{{ order.delivery_datetime }}</td>
+                    <td><a href="{% url 'FoodDeliveryTechnovizor:order' order.id %}" target="_blank">Подробнее</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
