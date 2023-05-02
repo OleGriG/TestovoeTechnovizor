@@ -1,37 +1,41 @@
-API для Yatube
-Python Django Pytest Postman
+# Веб-приложения для заказа корпоративной еды
 
-Python Django Pytest Postman
-
-Описание
+## Описание
 Тестовое задание в компанию Техновизор. Веб-приложение для заказа копроративной еды.
 
-Функционал
-Заказ еды, просмотр отчета о заказе, просмотр истории заказов
-Установка
-Клонировать репозиторий:
+## Функционал
+- Заказ еды
+- Просмотр отчета о заказе
+- Просмотр истории заказов
+
+## Установка
+1. Клонировать репозиторий:
 
 git clone https://github.com/OleGriG/TestovoeTechnovizor.git
 
-Установить виртуальное окружение для проекта:
+2. Установить виртуальное окружение для проекта:
 
 python -m venv venv
-Активировать виртуальное окружение для проекта:
 
-# для OS Lunix и MacOS
+3. Активировать виртуальное окружение для проекта:
+- для OS Lunix и MacOS
+
 source venv/bin/activate
 
-# для OS Windows
+- для OS Windows
+
 source venv/Scripts/activate
-Установить зависимости:
+
+4. Установить зависимости:
 
 python3 -m pip install --upgrade pip
 pip install -r requirements.txt
-Выполнить миграции на уровне проекта:
 
+5. Выполнить миграции на уровне проекта:
 
 python3 manage.py makemigrations
 python3 manage.py migrate
-Запустить проект:
 
-python manage.py runserver
+6. Запустить проект:
+
+python manage.py runserver.
