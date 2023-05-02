@@ -39,3 +39,5 @@ python3 manage.py migrate
 6. Запустить проект:
 
 python manage.py runserver.
+
+## Автор: Григорьев Олег Андреевич
